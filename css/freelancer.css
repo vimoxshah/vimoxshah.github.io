@@ -13,6 +13,14 @@ p {
 p.small {
   font-size: 16px;
 }
+#set-center{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 a,
 a:hover,
 a:focus,
@@ -66,6 +74,30 @@ hr.star-primary:after {
 }
 .img-centered {
   margin: 0 auto;
+}
+my {
+  text-align: center;
+  background: white;
+  color: #233140;
+}
+my .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+my img {
+  display: block;
+  margin: 0 auto 20px;
+}
+my .intro-text .name {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+}
+my .intro-text .skills {
+  font-size: 1.25em;
+  font-weight: 300;
 }
 header {
   text-align: center;
@@ -168,17 +200,17 @@ section.success a.active {
     padding-top: 75px;
   }
 }
-#portfolio .portfolio-item {
+#achievement .#portfolio-item {
   margin: 0 0 15px;
   right: 0;
 }
-#portfolio .portfolio-item .portfolio-link {
+#achievement .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .caption {
+#achievement .portfolio-item .portfolio-link .caption {
   background: rgba(24, 188, 156, 0.9);
   position: absolute;
   width: 100%;
@@ -188,10 +220,10 @@ section.success a.active {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#achievement .portfolio-item .portfolio-link .caption:hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#achievement .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -201,14 +233,14 @@ section.success a.active {
   margin-top: -12px;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#achievement .portfolio-item .portfolio-link .caption .caption-content i {
   margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#achievement .portfolio-item .portfolio-link .caption .caption-content h3,
+#achievement .portfolio-item .portfolio-link .caption .caption-content h4 {
   margin: 0;
 }
-#portfolio * {
+#achievement * {
   z-index: 2;
 }
 @media (min-width: 767px) {
