@@ -101,7 +101,12 @@ my .intro-text .skills {
 }
 header {
   text-align: center;
-  background: #18bc9c;
+  background-color: #ffffff;
+  background-image: url("img/big1.jpg"), -moz-linear-gradient(90deg, rgba(50, 25, 150, 0.5) 75%, rgba(0, 228, 255, 0.35));
+  background-image: url("img/big1.jpg"), -webkit-linear-gradient(90deg, rgba(50, 25, 150, 0.5) 75%, rgba(0, 228, 255, 0.35));
+  background-image: url("img/big1.jpg"), -ms-linear-gradient(10deg, rgba(10, 255, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+  background-image: url("img/big1.png"), linear-gradient(10deg, rgba(15, 255, 15, 0.5) 5%, rgba(0, 228, 255, 0.35));
+  background-repeat: repeat,			no-repeat,			no-repeat;
   color: white;
 }
 header .container {
