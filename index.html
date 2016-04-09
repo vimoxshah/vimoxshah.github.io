@@ -29,69 +29,14 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
-	<style>
-/* Center the loader */
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
-
-#myDiv {
-  display: none;
-  text-align: center;
-}
-</style>
 
 </head>
 
-<body oncontextmenu="return false" id="page-top" class="index" onload="myFunction()" style="margin:0;">
+<body oncontextmenu="return false" id="page-top" class="index">
 
-<div id="loader"></div>
+		
 
-<div style="display:none;" id="myDiv" class="animate-bottom">
-  <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -102,9 +47,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Vimox S Shah 
-				<p>&ensp; <font size="4" >&ensp; &ensp; &ensp; &ensp; &ensp;  Chasing the Yellow Elephant</font>
-                 </p>
+                <a class="navbar-brand" href="#page-top">Vimox S Shah
+				              <p><font size="4">Chasing the Yellow Elephant
+				                  </font>
+                        </p>
                 </a>
 
             </div>
@@ -468,21 +414,6 @@
 
 	</script>
 
-</div>
-
-<script>
-var myVar;
-
-function myFunction() {
-    myVar = setTimeout(showPage,1500);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
-   
 </body>
 
 </html>
