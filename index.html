@@ -29,16 +29,45 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<style>
 
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
 </head>
 
-<body oncontextmenu="return false" id="page-top" class="index">
+<body oncontextmenu="return false" id="page-top"  onload="showPage()" style="margin:0;" class="index">
 
 		
 
     <!-- Navigation -->
+	<div style="display:none;" id="myDiv" class="animate-bottom">
     <nav class="navbar navbar-default navbar-fixed-top">
+	
         <div class="container">
+		
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -48,13 +77,13 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#page-top">Vimox S Shah
-				              <p><font size="4">Chasing the Yellow Elephant
-				                  </font>
-                        </p>
+				              <p><font size="2.75em" ><pre> Chasing the Yellow Elephant </pre>
+				               </font>
+							   </p>
                 </a>
 
             </div>
-
+			
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -413,7 +442,17 @@
 		  ga('send', 'pageview');
 
 	</script>
+	
+	<script>
 
+
+function showPage() {
+
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</div>
 </body>
 
 </html>
